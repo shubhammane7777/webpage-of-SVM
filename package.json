@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://shubhammane7777.github.io/Deep-Dive-into-Support-Vector-Machines-SVM-Kernel-Trick",
+  "homepage": "https://shubhammane7777.github.io/webpage-of-SVM",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
