@@ -16,8 +16,14 @@ const SVMKernelPage = () => {
       <section className="mb-5">
         <h2 className="h3 font-weight-bold">Introduction</h2>
         <p>
-          Support Vector Machines (SVM) are one of the most powerful supervised learning algorithms used for classification and regression tasks. A key feature that makes SVMs particularly effective is the Kernel Trick, which allows them to handle non-linearly separable data by transforming it into a higher-dimensional space. This tutorial will explain the Kernel Trick in detail and demonstrate its impact using different SVM kernels.
-        </p>
+Support Vector Machines (SVM) are one of the most powerful supervised learning algorithms used for classification and regression tasks. A key feature that makes SVMs particularly effective is the Kernel Trick, which allows them to handle non-linearly separable data by transforming it into a higher-dimensional space.
+
+This tutorial will explain:
+- Why the Kernel Trick is needed
+- How the Kernel Trick works
+- Different types of Kernels in SVM
+- Mathematical intuition with kernel function equations
+- Comparison of different kernels using a real-world dataset        </p>
       </section>
 
       <section className="mb-5">
@@ -26,16 +32,13 @@ const SVMKernelPage = () => {
         <h4 className="font-weight-bold">1. Why is the Kernel Trick Needed?</h4>
         <p>
            A linear SVM works well when data is linearly separable, meaning it can be divided by a straight line (in 2D) or a hyperplane (in higher dimensions).
-
             However, real-world datasets often have complex, non-linear decision boundaries, making linear SVMs ineffective. The Kernel Trick enables SVMs to classify non-linear data by transforming it into a higher-dimensional space where it becomes linearly separable.
-
            Example: Suppose we have a dataset that forms concentric circles. A linear classifier cannot separate these classes. However, using the RBF Kernel, we can transform it into a higher-dimensional feature space where a linear decision boundary exists.
         </p>
 
         <h4 className="font-weight-bold">2. How Does the Kernel Trick Work?</h4>
         <p>
           Instead of explicitly transforming data into a higher-dimensional space (which can be computationally expensive), the Kernel Trick computes the dot product in the higher-dimensional space implicitly.
-
           Mathematically, a kernel function K(x, y) replaces the dot product Φ(x) ⋅ Φ(y), allowing efficient computations.
         </p>
 
