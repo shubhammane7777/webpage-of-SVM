@@ -25,6 +25,34 @@ This tutorial will explain:
 - Mathematical intuition with kernel function equations
 - Comparison of different kernels using a real-world dataset        </p>
       </section>
+      <section className="mb-5">
+  <h2 className="h3 font-weight-bold">Mathematical Intuition: Kernel Function Equations</h2>
+  <p>A kernel function <strong>K(x, y)</strong> computes the inner product of feature mappings <strong>Φ(x)</strong> and <strong>Φ(y)</strong> in the transformed space:</p>
+
+  <div className="mb-4">
+    <h4 className="font-weight-bold">1. Linear Kernel:</h4>
+    <p><strong>K(x, y) = x ⋅ y</strong></p>
+    <p className="text-muted"> Best for linearly separable data.</p>
+  </div>
+
+  <div className="mb-4">
+    <h4 className="font-weight-bold">2. Polynomial Kernel:</h4>
+    <p><strong>K(x, y) = (x ⋅ y + c)<sup>d</sup></strong></p>
+    <p className="text-muted"> Useful when feature interactions matter.</p>
+  </div>
+
+  <div className="mb-4">
+    <h4 className="font-weight-bold">3. Radial Basis Function (RBF) Kernel:</h4>
+    <p><strong>K(x, y) = exp(−γ ∣∣x − y∣∣<sup>2</sup>)</strong></p>
+    <p className="text-muted"> Best for complex, non-linear datasets.</p>
+  </div>
+
+  <div className="mb-4">
+    <h4 className="font-weight-bold">4. Sigmoid Kernel:</h4>
+    <p><strong>K(x, y) = tanh(αx ⋅ y + c)</strong></p>
+    <p className="text-muted"> Similar to neural network activation functions.</p>
+  </div>
+</section>
 
       <section className="mb-5">
         <h2 className="h3 font-weight-bold">Understanding the Kernel Trick</h2>
