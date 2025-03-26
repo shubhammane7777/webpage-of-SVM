@@ -71,6 +71,11 @@ const SVMKernelPage = () => {
           </table>
         </div>
       </section>
+      <section className="mb-5">
+        <h2 className="h3 font-weight-bold">Visualization of Kernel Transformations</h2>
+        <p> <strong>See how different kernels transform data:</strong> 
+        </p>
+      </section>
 
       <section className="mb-5">
         <h2 className="h3 font-weight-bold">Conclusion</h2>
