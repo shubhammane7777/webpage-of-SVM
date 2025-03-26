@@ -43,8 +43,13 @@ const SVMKernelPage = () => {
       </section>
 
       <section className="mb-5">
-        <h2 className="h3 font-weight-bold">Dataset and Implementation</h2>
-        <p>The <strong>make_moons</strong> dataset from Scikit-Learn is used for demonstration.</p>
+        <h2 className="h3 font-weight-bold">Dataset: Breast Cancer Wisconsin (Diagnostic)</h2>
+        <p> <strong>Dataset Overview</strong> 
+        The dataset consists of 569 samples with 30 numerical features describing cell nuclei characteristics. The target variable is:
+
+        Malignant (M): Represented as 1
+
+        Benign (B): Represented as 0</p>
       </section>
 
       <section className="mb-5">
