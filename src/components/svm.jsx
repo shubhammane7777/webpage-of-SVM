@@ -71,11 +71,27 @@ const SVMKernelPage = () => {
           </table>
         </div>
       </section>
-      <section className="mb-5">
-        <h2 className="h3 font-weight-bold">Visualization of Kernel Transformations</h2>
-        <p> <strong>See how different kernels transform data:</strong> 
-        </p>
-      </section>
+      <h2 className="h3 font-weight-bold">Visualization of Kernel Transformations</h2>
+  <p><strong>See how different kernels transform data:</strong></p>
+  
+  <div className="row text-center">
+    <div className="col-md-6">
+      <h4>Linear Kernel</h4>
+      <img 
+        src="https://raw.githubusercontent.com/shubhammane7777/Deep-Dive-into-Support-Vector-Machines-SVM-Kernel-Trick/main/images/linear_kernel.png" 
+        alt="Linear Kernel Transformation" 
+        className="img-fluid rounded shadow-sm"
+      />
+    </div>
+    <div className="col-md-6">
+      <h4>RBF Kernel</h4>
+      <img 
+        src="https://raw.githubusercontent.com/shubhammane7777/Deep-Dive-into-Support-Vector-Machines-SVM-Kernel-Trick/main/images/rbf_kernel.png" 
+        alt="RBF Kernel Transformation" 
+        className="img-fluid rounded shadow-sm"
+      />
+    </div>
+  </div>
 
       <section className="mb-5">
         <h2 className="h3 font-weight-bold">Conclusion</h2>
