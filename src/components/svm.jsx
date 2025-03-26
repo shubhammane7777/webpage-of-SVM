@@ -25,14 +25,18 @@ const SVMKernelPage = () => {
 
         <h4 className="font-weight-bold">1. Why is the Kernel Trick Needed?</h4>
         <p>
-          A linear SVM works well when data is linearly separable, meaning it can be divided by a straight line (in 2D) or a hyperplane (in higher dimensions). However, real-world datasets often have complex, non-linear decision boundaries.
-          The Kernel Trick allows us to transform such non-linearly separable data into a higher-dimensional space where a linear separator can be applied.
+         A linear SVM works well when data is linearly separable, meaning it can be divided by a straight line (in 2D) or a hyperplane (in higher dimensions).
+
+However, real-world datasets often have complex, non-linear decision boundaries, making linear SVMs ineffective. The Kernel Trick enables SVMs to classify non-linear data by transforming it into a higher-dimensional space where it becomes linearly separable.
+
+ Example: Suppose we have a dataset that forms concentric circles. A linear classifier cannot separate these classes. However, using the RBF Kernel, we can transform it into a higher-dimensional feature space where a linear decision boundary exists.
         </p>
 
         <h4 className="font-weight-bold">2. How Does the Kernel Trick Work?</h4>
         <p>
-          Instead of explicitly transforming the data into a higher dimension (which can be computationally expensive), the Kernel Trick computes the dot product in the higher-dimensional space implicitly. 
-          This makes it computationally efficient while still allowing the use of linear classifiers in the transformed space. In essence, it allows SVMs to learn from more complex relationships in the data.
+          Instead of explicitly transforming data into a higher-dimensional space (which can be computationally expensive), the Kernel Trick computes the dot product in the higher-dimensional space implicitly.
+
+Mathematically, a kernel function K(x, y) replaces the dot product Φ(x) ⋅ Φ(y), allowing efficient computations.
         </p>
 
         <h4 className="font-weight-bold">Common Types of Kernels</h4>
